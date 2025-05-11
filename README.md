@@ -38,7 +38,6 @@
 | **Tailwind CSS**     | Utility-first CSS styling      |
 | **shadcn/ui**        | Reusable UI components         |
 | **Framer Motion**    | Page and element animations    |
-| **Email.js**         | Share list via email (optional) |
 | **Netlify**          | Hosting                        |
 
 ---
