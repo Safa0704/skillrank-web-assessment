@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 33% 99%;
+    --foreground: 155 19% 28%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 155 19% 28%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 155 19% 28%;
+
+    --primary: 155 49% 43%;
+    --primary-foreground: 60 33% 99%;
+
+    --secondary: 84 29% 58%;
+    --secondary-foreground: 60 33% 99%;
+
+    --muted: 60 33% 96%;
+    --muted-foreground: 155 19% 45%;
+
+    --accent: 35 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 33% 99%;
+
+    --border: 155 19% 90%;
+    --input: 155 19% 90%;
+    --ring: 155 49% 43%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 155 19% 15%;
+    --foreground: 60 33% 96%;
+
+    --card: 155 19% 18%;
+    --card-foreground: 60 33% 96%;
+
+    --popover: 155 19% 18%;
+    --popover-foreground: 60 33% 96%;
+
+    --primary: 155 49% 43%;
+    --primary-foreground: 60 33% 99%;
+
+    --secondary: 84 29% 58%;
+    --secondary-foreground: 60 33% 99%;
+
+    --muted: 155 19% 24%;
+    --muted-foreground: 155 19% 70%;
+
+    --accent: 35 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 33% 96%;
+
+    --border: 155 19% 30%;
+    --input: 155 19% 30%;
+    --ring: 155 49% 43%;
+    
+    --sidebar-background: 155 19% 18%;
+    --sidebar-foreground: 60 33% 96%;
+    --sidebar-primary: 155 49% 43%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 155 19% 24%;
+    --sidebar-accent-foreground: 60 33% 96%;
+    --sidebar-border: 155 19% 30%;
+    --sidebar-ring: 155 49% 43%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+
+  .recipe-card {
+    @apply transition-all duration-300 hover:shadow-lg;
+  }
+
+  .recipe-card:hover img {
+    @apply scale-105;
+  }
+
+  .checkbox-item {
+    @apply transition-all duration-200;
+  }
+
+  .checkbox-item.checked {
+    @apply line-through text-muted-foreground;
+  }
+
+  .category-badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+  }
+}
