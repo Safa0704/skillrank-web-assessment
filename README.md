@@ -2,8 +2,7 @@
 
 ### Smart Shopping. Simple Planning.
 
-![Banner](https://images.unsplash.com/photo-1606787366850-de6330128bfc)  
-<sub><i>Image from Unsplash</i></sub>
+
 
 ---
 
@@ -44,7 +43,7 @@
 
 ## 📸 Screenshots
 
-### 🏠 Home Page  
+### 🏠 foods
 ![Home Screenshot](https://images.unsplash.com/photo-1600891964599-f61ba0e24092)
 
 ### 🥗 Recipe Selection  
